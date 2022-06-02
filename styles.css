@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+:root {
+    --background: rgb(224, 234, 247);
+    --header-background: white;
+    --footer-background: rgb(243, 242, 242);
+}
+
+body {
+    font-family: 'Hubballi', cursive;
+    background-color: var(--background);
+    padding-bottom: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--header-background);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--footer-background);
+}
