@@ -20,17 +20,17 @@
                 <p>
                     <label>
                         Give Them a Name:<br> 
-                        <input id="name-input" value="Change this later">
+                        <input id="name-input" value="Type Name Here">
                     </label>
                 </p>
                 <p>
                     Select an Avatar:<br>
                     <select id="avatar-select">
                         <option>--Choose an Avatar--</option>
-                        <option value="louise-ketchup.png">Louise</option>
-                        <option value="jairo.png">Jairo</option>
-                        <option value="Mickey.webp">Mickey</option>
-                        <option value="Hugo.png">Hugo</option>
+                        <option class="overlay" value="louise-ketchup.png">Louise</option>
+                        <option class="overlay" value="jairo.png">Jairo</option>
+                        <option class="overlay" value="Mickey.webp">Mickey</option>
+                        <option class="overlay" value="Hugo.png">Hugo</option>
                     </select>
                 </p> 
                 <p>
@@ -43,10 +43,10 @@
                     <label>Pick a Theme:</label><br>
                     <select id="theme-select">
                         <option>--Select a Theme--</option>
-                        <option value="bob-restaraunt.png">Bob's Burgers</option>
-                        <option value="wonder-wharf.jpg">Wonder Wharf</option>
-                        <option value="wagstaff.webp">Wagstaff Elementary</option>
-                        <option value="bob-bathroom.jpg">The Fancy Bathroom</option>
+                        <option class="base" value="bob-restaraunt.png">Bob's Burgers</option>
+                        <option class="base" value="wonder-wharf.jpg">Wonder Wharf</option>
+                        <option class="base" value="wagstaff.webp">Wagstaff Elementary</option>
+                        <option class="base" value="bob-bathroom.jpg">The Fancy Bathroom</option>
                     </select>
                 </p>
                 <p>
@@ -58,8 +58,8 @@
                 <p id="name-output">Bob</p>
                 <p id="character-description">He cook</p>
                 <p>
-                    <img id="avatar-display" src="">
-                    <img id="theme-display" src="">
+                    <img class="overlay" id="avatar-display" src="">
+                    <img class="base" id="theme-display" src="">
                 </p>
             </section>
         </div>
