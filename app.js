@@ -3,16 +3,22 @@ const nameInput = document.getElementById('name-input');
 const nameOutput = document.getElementById('name-output');
 const descriptionInput = document.getElementById('description-input');
 const characterDescription = document.getElementById('character-description');
-
+const avatarSelect = document.getElementById('avatar-select');
+const avatarDisplay = document.getElementById('avatar-display');
 // set event listeners
 nameInput.addEventListener('input', () => {
     nameOutput.textContent = nameInput.value;
 });
 
 descriptionInput.addEventListener('input', () => {
-  characterDescription.textContent = descriptionInput.value;
+    characterDescription.textContent = descriptionInput.value;
 });
 
+
+avatarSelect.addEventListener('change', () => {
+    const src = '' + avatarSelect.value;
+    avatarDisplay.src = src;
+});
 
 // Export button function
 exportButton.addEventListener('click', async () => {
