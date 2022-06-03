@@ -30,7 +30,7 @@ themeSelect.addEventListener('change', () => {
 // Export button function
 const exportCharacter = document.getElementById('export-character');
 const characterOutput = document.getElementById('character-output');
-exportCharacter.addEventListener('click', async () => {
+exportCharacter.addEventListener('click', async() => {
     const dataUrl = await domtoimage.toPng(characterOutput);
     const link = document.createElement('a');
     link.download = nameInput.value + '.png';
