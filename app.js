@@ -23,18 +23,20 @@ avatarSelect.addEventListener('change', () => {
 });
 
 themeSelect.addEventListener('change', () => {
-  const src = '' + themeSelect.value;
-  themeDisplay.src = src;
+    const src = '' + themeSelect.value;
+    themeDisplay.src = src;
 });
 
 // Export button function
-exportButton.addEventListener('click', async () => {
-    const dataUrl = await domtoimage.toPng(card);
+const exportCharacter = document.getElementById('export-character');
+const characterOutput = document.getElementById('character-output');
+exportCharacter.addEventListener('click', async () => {
+    const dataUrl = await domtoimage.toPng(characterOutput);
     const link = document.createElement('a');
     link.download = nameInput.value + '.png';
     link.href = dataUrl;
     link.click();
-  });
+});
     // get info from user input
     // use user input to update state
     // update DOM to reflect the new state
