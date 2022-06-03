@@ -1,11 +1,16 @@
 // grab DOM elements
 const nameInput = document.getElementById('name-input');
 const nameOutput = document.getElementById('name-output');
-
+const descriptionInput = document.getElementById('description-input');
+const characterDescription = document.getElementById('character-description');
 
 // set event listeners
 nameInput.addEventListener('input', () => {
     nameOutput.textContent = nameInput.value;
+});
+
+descriptionInput.addEventListener('input', () => {
+  characterDescription.textContent = descriptionInput.value;
 });
 
 
