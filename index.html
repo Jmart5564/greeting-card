@@ -11,16 +11,62 @@
 
 <body>
     <header>
-        <img src="assets/html_css_js.png">
-        <h1>Web UI Project</h1>
+        <h1>Bob's Burgers Character Builder</h1>
     </header>
 
     <main>
-
+        <div id="character-builder">
+            <section id="custom-inputs">
+                <p>
+                    <label>
+                        Give Them a Name:<br> 
+                        <input id="name-input" value="Type Name Here">
+                    </label>
+                </p>
+                <p>
+                    Select an Avatar:<br>
+                    <select id="avatar-select">
+                        <option>--Choose an Avatar--</option>
+                        <option class="overlay" value="louise-ketchup.png">Louise</option>
+                        <option class="overlay" value="jairo.png">Jairo</option>
+                        <option class="overlay" value="Mickey.webp">Mickey</option>
+                        <option class="overlay" value="Hugo.png">Hugo</option>
+                    </select>
+                </p> 
+                <p>
+                    Description:<br>
+                    <textarea id="description-input" rows="5" cols="50">
+                        Enter a description of your character here
+                    </textarea>
+                </p>
+                <p>
+                    <label>Pick a Theme:</label><br>
+                    <select id="theme-select">
+                        <option>--Select a Theme--</option>
+                        <option class="base" value="bob-restaraunt.png">Bob's Burgers</option>
+                        <option class="base" value="wonder-wharf.jpg">Wonder Wharf</option>
+                        <option class="base" value="wagstaff.webp">Wagstaff Elementary</option>
+                        <option class="base" value="bob-bathroom.jpg">The Fancy Bathroom</option>
+                    </select>
+                </p>
+                <p>
+                    <button id="export-character">Export</button>
+                </p> 
+            </section>
+            <section id="character-output">
+                <h1>Name of Character</h1>
+                <p id="name-output">Bob</p>
+                <p id="character-description">He cook</p>
+                <p>
+                    <img class="overlay" id="avatar-display" src="">
+                    <img class="base" id="theme-display" src="">
+                </p>
+            </section>
+        </div>
     </main>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
     <script type="module" src="app.js"></script>
 </body>
 
