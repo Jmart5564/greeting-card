@@ -5,6 +5,8 @@ const descriptionInput = document.getElementById('description-input');
 const characterDescription = document.getElementById('character-description');
 const avatarSelect = document.getElementById('avatar-select');
 const avatarDisplay = document.getElementById('avatar-display');
+const themeSelect = document.getElementById('theme-select');
+const themeDisplay = document.getElementById('theme-display');
 // set event listeners
 nameInput.addEventListener('input', () => {
     nameOutput.textContent = nameInput.value;
@@ -18,6 +20,11 @@ descriptionInput.addEventListener('input', () => {
 avatarSelect.addEventListener('change', () => {
     const src = '' + avatarSelect.value;
     avatarDisplay.src = src;
+});
+
+themeSelect.addEventListener('change', () => {
+  const src = '' + themeSelect.value;
+  themeDisplay.src = src;
 });
 
 // Export button function
