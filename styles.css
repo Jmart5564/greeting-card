@@ -28,3 +28,17 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+.overlay {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    z-index: 2;
+}
+
+.base {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}

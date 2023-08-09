@@ -1,3 +1,21 @@
+##List of State and Events:
+
+![Wireframe](character-builder-wireframe.png)
+1. Create Heading
+2. Create Name input box. Will need to associate addeventlistener and getbyID
+3. Create a dropdown that allows you to choose avatar for your character. Unique image associated with each avatar.
+4. Create typeare that allows user to type a description of their character that shows up in avatar image area.
+5. Create a dropdown box that allows user to pick a theme for their character. Each theme will have its own CSS properties.*learn how to overlay 2 images?*
+6. Create a button that allows user to download a copy of their finished character.
+
+
+
+
+
+
+
+
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
